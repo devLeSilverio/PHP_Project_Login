@@ -4,13 +4,42 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet"  href="<?=base_url()?>assets/css/login.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet"  href="<?=base_url()?>assets/css/login.css">
 	<title>Login</title>
 </head>
 <body>
-	<h1> Tela de Login </h1>
-
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col-4 offset-4">
+				<div class="jumbotron">
+					<h1 class="display-4">Login</h1>
+					<hr class="my-4">
+					<form action="">
+					<div class="form-group">
+								<div class="row">
+									<label for="email">E-mail:</label>
+									<input type="email" id="email" class="form-control" placeholder="Digite seu e-mail:">
+								</div>
+				 	</div>
+					 <div class="form-group">
+					 			<div class="row">
+									<label for="password">Senha:</label>
+									<input type="password" id="password" class="form-control">
+								</div>
+				 	</div>
+					 <div class="form-group">
+					 			<div class="row">
+								<button class="btn btn-outline-success btn-block" type="submit" >Entrar</button>
+								</div>
+				 	</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 </body>
 </html>

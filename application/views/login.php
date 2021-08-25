@@ -12,8 +12,8 @@
 	<div class="container">
 		<div class="row mt-4">
 			<div class="col-4 offset-4">
-				<div class="jumbotron">
-					<h1 class="display-4">Login</h1>
+				<div class="jumbotron form-top">
+					<h1 class="display-4">Login</h1> 
 					<hr class="my-4">
 					<form action="">
 					<div class="form-group">
@@ -31,6 +31,12 @@
 					 <div class="form-group">
 					 			<div class="row">
 								<button class="btn btn-outline-success btn-block" type="submit" >Entrar</button>
+								</div>
+				 	</div>
+					 <hr class="my-4">
+					 <div class="form-group">
+					 			<div class="row">
+								<a  href="#" class="btn btn-outline-primary btn-block" >Realizar Cadastro</a>
 								</div>
 				 	</div>
 						</form>

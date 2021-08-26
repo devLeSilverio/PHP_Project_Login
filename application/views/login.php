@@ -11,41 +11,38 @@
 <body>
 	<div class="container">
 		<div class="row mt-4">
-			<div class="col-4 offset-4">
+			<div class="col-8 offset-2">
 				<div class="jumbotron form-top">
 					<h1 class="display-4">Login</h1> 
 					<hr class="my-4">
-					<form action="">
-					<div class="form-group">
-								<div class="row">
-									<label for="email">E-mail:</label>
-									<input type="email" id="email" class="form-control" placeholder="Digite seu e-mail:">
-								</div>
-				 	</div>
-					 <div class="form-group">
-					 			<div class="row">
-									<label for="password">Senha:</label>
-									<input type="password" id="password" class="form-control">
-								</div>
-				 	</div>
-					 <div class="form-group">
-					 			<div class="row">
-								<button class="btn btn-outline-success btn-block" type="submit" >Entrar</button>
-								</div>
-				 	</div>
+					<form action="<?=base_url('entrar')?>" method="post">
+						<div class="form-group">
+									<div class="row">
+										<label for="email">E-mail:</label>
+										<input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail:">
+									</div>
+						</div>
+						<div class="form-group">
+									<div class="row">
+										<label for="password">Senha:</label>
+										<input type="password" id="password" name="password" class="form-control">
+									</div>
+						</div>
+						<div class="form-group">
+									<div class="row">
+									<button class="btn btn-outline-success btn-block" type="submit" >Entrar</button>
+									</div>
+						</div>
 					 <hr class="my-4">
-					 <div class="form-group">
-					 			<div class="row">
-								<a  href="#" class="btn btn-outline-primary btn-block" >Realizar Cadastro</a>
-								</div>
-				 	</div>
-						</form>
-					</div>
+						<div class="form-group">
+									<div class="row">
+									<a  href="<?=base_url()?>cadastro" class="btn btn-outline-primary btn-block" >Realizar Cadastro</a>
+									</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-
 </body>
 </html>

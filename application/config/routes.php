@@ -52,3 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+/* o metodo trabalhado sera o post 
+ */$route['inserir']['post'] = 'usuario/cadastrarUsuario';
+/*  rota para chamar controller
+ */$route['entrar']['post'] = 'usuario/entrar';

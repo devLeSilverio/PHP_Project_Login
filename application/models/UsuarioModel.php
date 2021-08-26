@@ -27,11 +27,17 @@ class UsuarioModel extends CI_Model {
 	$usuario = $this->db->get("tb_usuario")->row_array();
 
 	if($usuario){
+		$this->session->set_userdata("logado",$usuario);
 	   redirect((base_url('home')));
   echo "oi";
 	}else{
 	   redirect((base_url('login')));
 	}
 }
+
+	public function sair(){
+		$this->session->unset_userdata('logado');
+		redirect((base_url('login')));
+	}
 
 }

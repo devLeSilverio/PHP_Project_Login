@@ -21,56 +21,56 @@
 							<a href="<?=base_url("sair")?>" class="btn btn-warning btn-block">Sair</a>
 					</div>
 				</div>
-				<form action="">
 					<div class="row">
 						<div class="col-12">
-							<h3>Cadastro de Enderço</h3>
+							<h3>Cadastro de Endereço</h3>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-8">
-							<div class="form-group">
-									<label for="">Digite seu Cep:</label>
-									<input type="text" class="form-control">
-							</div>
+						<form action="<?=base_url('inseriraddress')?>" method="post">
+								<div class="form-group">
+										<label for="">Digite seu Cep:</label>
+										<input type="text" class="form-control" name="cep" id="cep"/>
+								</div>
 						</div>
 						<div class="col-4">
-							<button class="btn btn-primary btn-block search">Buscar</button>
+							<button class="btn btn-primary btn-block search" id="buscar">Buscar</button>
 						</div>
 					</div>
 					<div class="row">
 							<div class="col-12">
 								<label for="">Rua:</label>
-								<input type="text" class="form-control" />
+								<input type="text" class="form-control" name="rua" id="rua"/>
 							</div>
 					</div>
 					<div class="row">
 							<div class="col-2">
 								<label for="">Número:</label>
-								<input type="text" class="form-control" />
+								<input type="text" class="form-control" id="number" name="number_home"/>
 							</div>
 							<div class="col-4">
 								<label for="">Bairro:</label>
-								<input type="text" class="form-control" />
+								<input type="text" class="form-control" id="bairro" name="district"/>
 							</div>
 							<div class="col-4">
 								<label for="">Cidade:</label>
-								<input type="text" class="form-control" />
+								<input type="text" class="form-control" id="cidade" name="city"/>
 							</div>
 							<div class="col-2">
 								<label for="">Estado:</label>
-								<input type="text" class="form-control" />
+								<input type="text" class="form-control" id="estado" name="uf_state" />
 							</div>
 					</div>
 					<div class="row">
 							<div class="col-6">
-									<button class="btn btn-success btn-block search">Salvar</button>
+									<button class="btn btn-success btn-block search" type="submit">Salvar</button>
 							</div>
+							</form>
 							<div class="col-6">
-									<button class="btn btn-danger btn-block search">Cancelar</button>
+									<button class="btn btn-danger btn-block search" id="cancelar" >Cancelar</button>
 							</div>
 					</div>
-				</form>
 			</div>
 			
 	<?php
@@ -79,5 +79,6 @@
 		}
 	?>
 
+		<script src="<?=base_url()?>/assets/js/cep.js"></script>
 </body>
 </html>

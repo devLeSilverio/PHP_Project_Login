@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 /* o metodo trabalhado sera o post 
  */$route['inserir']['post'] = 'usuario/cadastrarUsuario';
+   $route['inseriraddress']['post'] = 'endereco/cadastrarEndereco';
 /*  rota para chamar controller
  */$route['entrar']['post'] = 'usuario/entrar';
    $route['sair'] = 'usuario/sair';

@@ -9,7 +9,18 @@
 	<title>Login</title>
 </head>
 <body>
-			<div class="container">
+		<div class="container">
+				<div class="row mt-4">
+						<div class="offset-2 col-2">
+							<a href="<?=base_url('login')?>"><img src="<?=base_url()?>assets/imgs/brazil.jpg" width="100" height="50"/></a>
+						</div>
+						<div class="offset-1 col-2">
+						<a href="<?=base_url('loginUs')?>"><img src="<?=base_url()?>assets/imgs/eua.png" width="100" height="50"/></a>
+					</div>
+					<div class="offset-1 col-4">
+						<a href="<?=base_url('loginEs')?>"><img src="<?=base_url()?>assets/imgs/espanha.png" width="100" height="50"/></a>
+					</div>
+				</div>
 				<div class="row mt-4">
 					<div class="col-8 offset-2">
 						<div class="jumbotron form-top">
@@ -44,13 +55,5 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="offset-4 col-2">
-					<a href="<?=base_url('login')?>" class="btn btn-primary btn-block">PT-BR</a>
-				</div>
-				<div class="col-2">
-					<a href="<?=base_url('loginUs')?>" class="btn btn-primary btn-block">EN-US</a>
-			</div>
-		</div>
 </body>
 </html>
